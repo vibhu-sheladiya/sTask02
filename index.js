@@ -15,6 +15,6 @@ createDb();
 app.use("/v1", router);
 
 app.use(express.static(`./public`));
-server.listen(3000, () => {
+server.listen(process.env.PORT, () => {
   console.log(`server is done ${3000}`);
 });
