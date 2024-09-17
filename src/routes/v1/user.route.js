@@ -14,8 +14,12 @@ router.post("/create", register);
 router.post("/create-blog",createBlog );
 router.put("/update-blog",updateBlog );
 router.delete("/delete-blog",deleteblog );
-router.get("/get-blog",userAuth(),getAllBlogs );
-router.get("/blog/:id",userAuth(),getBlogById );
+router.get("/get-blog",
+  // userAuth(),
+getAllBlogs );
+router.get("/blog/:id",
+  // userAuth(),
+  getBlogById );
 
 
 router.post("/login", userAuth(), login);
